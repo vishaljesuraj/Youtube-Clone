@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YouTube Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="sidebar" id="sidebar">
+    <span class="close-btn" onclick="toggleSidebar()">&times;</span>
+    <h2><i class="fab fa-youtube"></i> YouTube</h2>
+    <ul>
+      <li><i class="fas fa-home"></i> Home</li>
+      <li><i class="fas fa-fire"></i> Trending</li>
+      <li><i class="fas fa-photo-video"></i> Shorts</li>
+      <li><i class="fas fa-star"></i> Subscriptions</li>
+      <li><i class="fas fa-clock"></i> Watch Later</li>
+      <li><i class="fas fa-thumbs-up"></i> Liked Videos</li>
+      <li><i class="fas fa-history"></i> History</li>
+      <li><i class="fas fa-play"></i> Your Videos</li>
+      <li><i class="fas fa-film"></i> Movies</li>
+      <li><i class="fas fa-cog"></i> Settings</li>
+      <li><i class="fas fa-question-circle"></i> Help</li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <div class="topbar">
+      <i class="fas fa-bars menu-icon" onclick="toggleSidebar()"></i>
+      <input type="text" placeholder="Search..." />
+      <button><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="categories">
+      <button>All</button>
+      <button>Tamil</button>
+      <button>Hollywood</button>
+      <button>Comedy</button>
+    </div>
+
+    <div class="video-grid">
+        <div class="card"><img src="leo.jpg" alt="Leo"><h4>Leo | Tamil Blockbuster</h4><p>Troll Tamil • 5M views • 3 months ago</p></div>
+        <div class="card"><img src="oppenheimer.png" alt="Oppenheimer"><h4>Oppenheimer | Hollywood</h4><p>Universal Pictures • 8M views • 6 months ago</p></div>
+        <div class="card"><img src="jailer.jpg" alt="Jailer"><h4>Jailer | Rajinikanth</h4><p>Sun Pictures • 10M views • 1 month ago</p></div>
+        <div class="card"><img src="endgame.jpg" alt="Avengers"><h4>Avengers Endgame</h4><p>Marvel Studios • 20M views • 1 year ago</p></div>
+      </div>
+  
+      <div class="shorts-section">
+        <h3><i class="fas fa-bolt"></i> Shorts</h3>
+        <div class="shorts-container">
+          <div class="short"><img src="shorts1.jpg" alt="Short 1"><p>CSK vs RCB | Super Sunday</p></div>
+          <div class="short"><img src="short2.jpg" alt="Short 2"><p>Sunday Never Ends Without Biryani 😋</p></div>
+          <div class="short"><img src="short3.jpg" alt="Short 3"><p>CSK vs MI! யாருக்கு வெற்றி?</p></div>
+        </div>
+      </div>
+  
+      <div class="video-grid">
+        <div class="card"><img src="rrr.jpg" alt="RRR"><h4>RRR | Telugu Blockbuster</h4><p>DVR Entertainments • 18M views • 5 months ago</p></div>
+        <div class="card"><img src="vikram.jpg" alt="Vikram"><h4>Vikram | Kamal Haasan</h4><p>Raaj Kamal Films • 12M views • 2 months ago</p></div>
+        <div class="card"><img src="inspection.jpg" alt="Inception"><h4>Inception | Sci-fi Classic</h4><p>Warner Bros • 15M views • 3 years ago</p></div>
+        <div class="card"><img src="darknight.jpg" alt="Dark Knight"><h4>The Dark Knight</h4><p>DC • 25M views • 10 years ago</p></div>
+      </div>
+    </div>
+    
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('show');
+    }
+  </script>
+</body>
+</html>
